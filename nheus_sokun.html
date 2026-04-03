@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
+<title>Nheus Sokun · Cameraman & Editor CV</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f0e0c;
+  font-family: 'Barlow', sans-serif;
+  color: #2a2520;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 16px 12px;
+}
+
+/* MAIN CARD */
+.page {
+  width: 100%;
+  max-width: 1000px;
+  background: #f5f0e8;
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.7);
+  border-radius: 0;
+  overflow: hidden;
+}
+
+/* ========= HEADER (RESPONSIVE) ========= */
+.header {
+  background: linear-gradient(135deg, #1a1510 0%, #2a2520 50%, #1a1510 100%);
+  padding: 32px 24px 36px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header>div:first-child {
+  flex: 1;
+  min-width: 180px;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: 200px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(200, 169, 110, 0.12) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: -80px;
+  left: -80px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(200, 169, 110, 0.07) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.htag {
+  font-size: 9px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #6b6050;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.hname {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 0.95;
+  color: #f5f0e8;
+  margin-bottom: 10px;
+  letter-spacing: -1.5px;
+}
+
+.hrole {
+  font-size: 11px;
+  color: #c8a96e;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+  font-weight: 700;
+}
+
+.hcontacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.hc {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #a09388;
+  font-weight: 600;
+}
+
+.hc-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #332d27;
+  border: 1px solid #4a433c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.hc strong {
+  color: #e8e0d4;
+  font-weight: 700;
+}
+
+/* 3D PHOTO BOX */
+.photo-box {
+  width: 110px;
+  height: 140px;
+  background: linear-gradient(145deg, #3a342e, #2a2520);
+  border: 2px solid #c8a96e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: 5px 5px 0 #c8a96e, 7px 7px 0 #a08040, 9px 9px 0 rgba(0, 0, 0, 0.3);
+  transform: perspective(600px) rotateY(-2deg);
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.photo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-box::after {
+  content: 'NHEUS SOKUN';
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 6px;
+  letter-spacing: 2px;
+  color: #f5f0e8;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 3px 0;
+  font-weight: 700;
+  backdrop-filter: blur(2px);
+}
+
+/* tablet and up */
+@media (min-width: 550px) {
+  body {
+    padding: 32px 24px;
+  }
+
+  .header {
+    padding: 44px 40px 48px;
+  }
+
+  .hname {
+    font-size: 56px;
+  }
+
+  .photo-box {
+    width: 140px;
+    height: 170px;
+  }
+}
+
+@media (min-width: 750px) {
+  .header {
+    padding: 60px 60px 52px;
+  }
+
+  .hname {
+    font-size: 66px;
+  }
+
+  .photo-box {
+    width: 150px;
+    height: 180px;
+  }
+
+  .htag {
+    font-size: 10px;
+  }
+
+  .hrole {
+    font-size: 13px;
+  }
+}
+
+/* APPLY STRIP (responsive) */
+.apply-strip {
+  background: linear-gradient(90deg, #c8a96e 0%, #e0c080 50%, #c8a96e 100%);
+  padding: 12px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.al {
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #7a6030;
+  font-weight: 800;
+}
+
+.av {
+  font-size: 12px;
+  color: #1a1208;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+.asep {
+  display: none;
+}
+
+@media (min-width: 480px) {
+  .apply-strip {
+    flex-wrap: nowrap;
+    padding: 16px 40px;
+  }
+
+  .asep {
+    display: inline-block;
+    color: #a08040;
+    margin: 0 6px;
+    font-weight: 800;
+    font-size: 16px;
+  }
+
+  .av {
+    font-size: 15px;
+  }
+}
+
+/* BODY : FLEX -> GRID on desktop */
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 750px) {
+  .body {
+    display: grid;
+    grid-template-columns: 290px 1fr;
+  }
+}
+
+/* SIDEBAR */
+.sidebar {
+  background: #ede7dc;
+  padding: 28px 20px;
+  border-right: none;
+}
+
+@media (min-width: 750px) {
+  .sidebar {
+    padding: 48px 34px;
+    border-right: 1px solid #d8d0c4;
+  }
+}
+
+.sblock {
+  margin-bottom: 32px;
+}
+
+.slabel {
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #f5f0e8;
+  margin-bottom: 16px;
+  padding: 6px 12px;
+  background: #2a2520;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 3px 3px 0 #c8a96e;
+}
+
+.irow {
+  margin-bottom: 12px;
+}
+
+.ikey {
+  font-size: 10px;
+  color: #9a8a80;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.ival {
+  font-size: 14px;
+  color: #1a1510;
+  font-weight: 800;
+}
+
+.skrow {
+  margin-bottom: 14px;
+}
+
+.sk-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.skname {
+  font-size: 13px;
+  font-weight: 800;
+  color: #1a1510;
+}
+
+.skpct {
+  font-size: 11px;
+  color: #c8a96e;
+  font-weight: 800;
+}
+
+.skbar-wrap {
+  height: 9px;
+  background: #d4ccc0;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.skfill {
+  height: 100%;
+  background: linear-gradient(90deg, #c8a96e, #e8c878);
+  border-radius: 2px;
+  width: 0%;
+  animation: fillBar 1s ease forwards;
+}
+
+@keyframes fillBar {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: var(--w, 0%);
+  }
+}
+
+.lrow {
+  margin-bottom: 14px;
+}
+
+.lname {
+  font-size: 15px;
+  font-weight: 800;
+  margin-bottom: 5px;
+  color: #1a1510;
+}
+
+.ltags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.ltag {
+  font-size: 10px;
+  padding: 3px 10px;
+  background: linear-gradient(145deg, #2a2520, #3a342e);
+  color: #f5f0e8;
+  box-shadow: 2px 2px 0 #c8a96e;
+  font-weight: 700;
+}
+
+.itags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.itag {
+  font-size: 11px;
+  padding: 4px 12px;
+  background: linear-gradient(145deg, #2a2520, #3a342e);
+  color: #f5f0e8;
+  box-shadow: 2px 2px 0 #c8a96e;
+  font-weight: 700;
+  transition: 0.1s;
+  cursor: default;
+}
+
+/* MAIN */
+.main {
+  background: #f5f0e8;
+  padding: 28px 20px;
+}
+
+@media (min-width: 750px) {
+  .main {
+    padding: 48px 52px;
+  }
+}
+
+.sec {
+  margin-bottom: 32px;
+}
+
+.stitle {
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #f5f0e8;
+  margin-bottom: 20px;
+  padding: 7px 12px;
+  background: #2a2520;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 4px 4px 0 #c8a96e;
+}
+
+.stitle-icon {
+  font-size: 14px;
+}
+
+.ti {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+  gap: 6px;
+}
+
+@media (min-width: 500px) {
+  .ti {
+    display: grid;
+    grid-template-columns: 96px 1fr;
+    gap: 14px;
+    align-items: start;
+  }
+}
+
+.tyr {
+  font-size: 10px;
+  color: #f5f0e8;
+  padding: 3px 8px;
+  text-align: center;
+  background: #c8a96e;
+  font-weight: 800;
+  width: fit-content;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ttl {
+  font-size: 16px;
+  font-weight: 800;
+  color: #1a1510;
+}
+
+.tsub {
+  font-size: 12px;
+  color: #7a7068;
+  margin-top: 2px;
+  font-weight: 600;
+}
+
+/* Experience */
+.ex {
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  background: linear-gradient(135deg, #ede7dc, #e8e0d0);
+  border-left: 4px solid #c8a96e;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.08);
+}
+
+.exrole {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1510;
+}
+
+.exorg {
+  font-size: 12px;
+  color: #7a7068;
+  margin-top: 3px;
+  font-weight: 700;
+}
+
+.exbadge {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 10px;
+  padding: 3px 10px;
+  background: #d8d0c4;
+  font-weight: 800;
+  color: #5a5048;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.exbadge.now {
+  background: linear-gradient(135deg, #2a2520, #3a342e);
+  color: #c8a96e;
+  box-shadow: 2px 2px 0 #c8a96e;
+}
+
+/* References */
+.rcard {
+  background: linear-gradient(135deg, #ede7dc, #e4ddd0);
+  padding: 16px 18px;
+  margin-bottom: 14px;
+  border-left: 4px solid #c8a96e;
+  box-shadow: 4px 4px 0 rgba(200, 169, 110, 0.3);
+}
+
+.rname {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1510;
+}
+
+.rtitle {
+  font-size: 10px;
+  color: #9a8a80;
+  margin-bottom: 6px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.rcontact {
+  font-size: 12px;
+  color: #3a3028;
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+.rcontact a {
+  color: #c8a96e;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* MEDIA SECTION (fully responsive grid) */
+.media-section {
+  background: linear-gradient(135deg, #1a1510 0%, #2a2520 100%);
+  padding: 36px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 650px) {
+  .media-section {
+    padding: 52px 60px;
+  }
+}
+
+.media-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: #f5f0e8;
+  margin-bottom: 4px;
+  letter-spacing: -0.5px;
+}
+
+@media (min-width: 550px) {
+  .media-heading {
+    font-size: 38px;
+  }
+}
+
+.media-sub {
+  font-size: 10px;
+  color: #6b6050;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+  font-weight: 700;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+@media (min-width: 550px) {
+  .media-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 850px) {
+  .media-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.mcard {
+  background: linear-gradient(145deg, #2a2520, #332d27);
+  border: 1px solid #3a342e;
+  padding: 18px 18px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mcard:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 rgba(200, 169, 110, 0.4);
+}
+
+.mcard-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.micon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.micon-wrap svg {
+  width: 24px;
+  height: 24px;
+}
+
+.mplatform {
+  font-size: 15px;
+  font-weight: 800;
+  color: #f5f0e8;
+  letter-spacing: 0.3px;
+}
+
+.mhandle {
+  font-size: 10px;
+  color: #6b6050;
+  font-weight: 600;
+  margin-top: 1px;
+}
+
+.mdesc {
+  font-size: 11px;
+  color: #8a8078;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 4px 0;
+}
+
+.mlink {
+  font-size: 10px;
+  color: #c8a96e;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.mlink::after {
+  content: '→';
+  font-size: 12px;
+}
+
+/* Footer */
+.footer {
+  background: #0f0e0c;
+  color: #3a342e;
+  text-align: center;
+  padding: 16px 12px;
+  font-size: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-top: 1px solid #1a1510;
+}
+
+@media (min-width: 500px) {
+  .footer {
+    font-size: 9px;
+    letter-spacing: 5px;
+    padding: 20px;
+  }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER with YOUR PHOTO (SoKun Nheus2.png) -->
+  <div class="header">
+    <div>
+      <div class="htag">✦ Kingdom of Cambodia · Nation Religion King ✦</div>
+      <div class="hname">Nheus<br>Sokun</div>
+      <div class="hrole">Cameraman · CapCut Editor</div>
+      <div class="hcontacts">
+        <div class="hc"><div class="hc-icon">📍</div><span><strong>Chop village</strong>, Siem Reap</span></div>
+        <div class="hc"><div class="hc-icon">📞</div><strong>0978 586 856</strong></div>
+        <div class="hc"><div class="hc-icon">🇰🇭</div><strong>Cambodian</strong></div>
+      </div>
+    </div>
+    <!-- YOUR IMAGE (keep exact filename) -->
+    <div class="photo-box">
+      <img src="./SoKun Nheus2.png" alt="Nheus Sokun portrait">
+    </div>
+  </div>
+
+  <!-- APPLY STRIP -->
+  <div class="apply-strip">
+    <span class="al">✦ Applying for</span>
+    <span class="av">Personal Cameraman</span>
+    <span class="asep">·</span>
+    <span class="av">CapCut Video Editor</span>
+  </div>
+
+  <!-- BODY -->
+  <div class="body">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="sblock">
+        <div class="slabel"><span class="slabel-icon">👤</span> Personal Info</div>
+        <div class="irow"><div class="ikey">Date of Birth</div><div class="ival">09 March 2001</div></div>
+        <div class="irow"><div class="ikey">Age</div><div class="ival">24 Years Old</div></div>
+        <div class="irow"><div class="ikey">Gender</div><div class="ival">Male</div></div>
+        <div class="irow"><div class="ikey">Marital Status</div><div class="ival">Single</div></div>
+        <div class="irow"><div class="ikey">Nationality</div><div class="ival">Cambodian</div></div>
+        <div class="irow"><div class="ikey">Place of Birth</div><div class="ival">Sotnikum, Siem Reap</div></div>
+      </div>
+
+      <div class="sblock">
+        <div class="slabel"><span class="slabel-icon">⚡</span> Skills</div>
+        <div class="skrow"><div class="sk-top"><span class="skname">CapCut Editing</span><span class="skpct">90%</span></div><div class="skbar-wrap"><div class="skfill" style="--w:90%; width:90%"></div></div></div>
+        <div class="skrow"><div class="sk-top"><span class="skname">Photography & Video</span><span class="skpct">88%</span></div><div class="skbar-wrap"><div class="skfill" style="--w:88%; width:88%"></div></div></div>
+        <div class="skrow"><div class="sk-top"><span class="skname">MS Office Suite</span><span class="skpct">88%</span></div><div class="skbar-wrap"><div class="skfill" style="--w:88%; width:88%"></div></div></div>
+        <div class="skrow"><div class="sk-top"><span class="skname">Web Development</span><span class="skpct">50%</span></div><div class="skbar-wrap"><div class="skfill" style="--w:50%; width:50%"></div></div></div>
+        <div class="skrow"><div class="sk-top"><span class="skname">Computer Repair</span><span class="skpct">82%</span></div><div class="skbar-wrap"><div class="skfill" style="--w:82%; width:82%"></div></div></div>
+        <div class="skrow"><div class="sk-top"><span class="skname">Internet & Email</span><span class="skpct">92%</span></div><div class="skbar-wrap"><div class="skfill" style="--w:92%; width:92%"></div></div></div>
+      </div>
+
+      <div class="sblock">
+        <div class="slabel"><span class="slabel-icon">🌐</span> Languages</div>
+        <div class="lrow"><div class="lname">ខ្មែរ (Khmer)</div><div class="ltags"><span class="ltag">Mother Tongue</span></div></div>
+        <div class="lrow"><div class="lname">English</div><div class="ltags"><span class="ltag">Speaking</span><span class="ltag">Listening</span><span class="ltag">Reading</span><span class="ltag">Writing</span></div></div>
+      </div>
+
+      <div class="sblock">
+        <div class="slabel"><span class="slabel-icon">🎯</span> Interests</div>
+        <div class="itags"><span class="itag">🎵 Singing</span><span class="itag">💃 Dancing</span><span class="itag">🎶 Music</span><span class="itag">📖 Reading</span><span class="itag">✈️ Travel</span><span class="itag">🔬 Research</span><span class="itag">🤝 Team Work</span></div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+      <div class="sec">
+        <div class="stitle"><span class="stitle-icon">🎓</span> Education</div>
+        <div class="ti"><div class="tyr">2023–Now</div><div><div class="ttl">Build Bright University</div><div class="tsub">Management Information Systems (MIS)</div></div></div>
+        <div class="ti"><div class="tyr">2021–2022</div><div><div class="ttl">ITS Computer School</div><div class="tsub">Computer Studies & Technology</div></div></div>
+        <div class="ti"><div class="tyr">2020–2021</div><div><div class="ttl">ACE School</div><div class="tsub">Academic Studies</div></div></div>
+        <div class="ti"><div class="tyr">2017–2020</div><div><div class="ttl">Khnar Po High School</div><div class="tsub">Graduated with Diploma</div></div></div>
+        <div class="ti"><div class="tyr">2014–2017</div><div><div class="ttl">Khnar Po Secondary School</div><div class="tsub">Completed Secondary Education</div></div></div>
+        <div class="ti"><div class="tyr">2008–2014</div><div><div class="ttl">Romdeng Primary School</div><div class="tsub">Completed Primary Education</div></div></div>
+      </div>
+
+      <div class="sec">
+        <div class="stitle"><span class="stitle-icon">💼</span> Experience</div>
+        <div class="ex"><div class="exrole">Computer Instructor</div><div class="exorg">🏫 Westgate International School</div><span class="exbadge now">✦ 2024 – Present</span><div style="font-size:12px;color:#7a7068;margin-top:8px;font-weight:600;">បង្រៀន Computer Science, ការប្រើប្រាស់ Software ផ្សេងៗ<br>និង ជួយដោះស្រាយបញ្ហា Technical</div></div>
+        <div class="ex"><div class="exrole">Volunteer Photographer &amp; Videographer</div><div class="exorg">🎓 Build Bright University</div><span class="exbadge">2023</span><div style="font-size:12px;color:#7a7068;margin-top:8px;">ថត​រូប និង វីដេអូ​ Events ផ្សេងៗ<br>កែសម្រួលដោយប្រើ CapCut & Editing Tools</div></div>
+        <div class="ex"><div class="exrole">MIS Trainee</div><div class="exorg">🎓 Build Bright University</div><span class="exbadge">Aug – Dec 2023</span><div style="font-size:12px;color:#7a7068;margin-top:8px;">Trainee as Management Information System<br>រៀនអំពី Database, Web System & IT Management</div></div>
+        <div class="ex"><div class="exrole">Receptionist</div><div class="exorg">🏨 Sambath PonLeu Chey Boutique</div><span class="exbadge">2022</span><div style="font-size:12px;color:#7a7068;margin-top:8px;">ទទួលភ្ញៀវ គ្រប់គ្រង Booking<br>និង ផ្តល់សេវាកម្មដ៏ល្អ</div></div>
+      </div>
+
+      <div class="sec">
+        <div class="stitle"><span class="stitle-icon">🏆</span> Training &amp; Competitions</div>
+        <div class="ti"><div class="tyr">Nov 2024</div><div><div class="ttl">Junior Web Developer Contest</div><div class="tsub">25 November – 2 December 2024</div></div></div>
+        <div class="ti"><div class="tyr">Aug 2023</div><div><div class="ttl">MIS Trainee Program</div><div class="tsub">Build Bright University — Full Training</div></div></div>
+        <div class="ti"><div class="tyr">Apr 2023</div><div><div class="ttl">BBUSR Hero Typing</div><div class="tsub">Typing Speed Competition</div></div></div>
+      </div>
+
+      <div class="sec">
+        <div class="stitle"><span class="stitle-icon">📋</span> References</div>
+        <div class="rcard"><div class="rname">Mr. Kim Chanrong</div><div class="rtitle">Management Information Systems</div><div class="rcontact">✉️ <a href="mailto:kimchanong@gmail.com">kimchanong@gmail.com</a><br>📱 +855 16 959 696</div></div>
+        <div class="rcard"><div class="rname">Mr. Vay Sophanno</div><div class="rtitle">Deputy Director of Education Office</div><div class="rcontact">✉️ <a href="mailto:sophannovy@gmail.com">sophannovy@gmail.com</a><br>📱 +855 99 407 878</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MEDIA SECTION (social links) -->
+  <div class="media-section">
+    <div class="media-heading">Connect with Me</div>
+    <div class="media-sub">✦ Social Media & Direct Contact ✦</div>
+    <div class="media-grid">
+      <a class="mcard" href="https://www.facebook.com/SoKunVlogger" target="_blank" style="--accent:#1877F2"><div class="mcard-top"><div class="micon-wrap" style="background:linear-gradient(145deg,#2196f3,#1565c0)"><svg viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" fill="#fff"/></svg></div><div><div class="mplatform">Facebook</div><div class="mhandle">SoKun Vlogger</div></div></div><div class="mdesc">ចូលមើល Page ព័ត៌មាន ការចែករំលែក និង Update ថ្មីៗ</div><div class="mlink">Visit Page</div></a>
+      <a class="mcard" href="https://www.youtube.com/@SoKunVlogger" target="_blank" style="--accent:#FF0000"><div class="mcard-top"><div class="micon-wrap" style="background:linear-gradient(145deg,#f44336,#b71c1c)"><svg viewBox="0 0 24 24" fill="none"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" fill="#fff"/><path d="M9.75 15.02V8.98L15.5 12l-5.75 3.02z" fill="#f44336"/></svg></div><div><div class="mplatform">YouTube</div><div class="mhandle">SoKun Vlogger</div></div></div><div class="mdesc">វីដេអូ ចំណេះដឹង ការណែនាំ Computer & Tech</div><div class="mlink">Watch Now</div></a>
+      <a class="mcard" href="https://www.tiktok.com/@sokun.vlogger22?lang=en" target="_blank" style="--accent:#69C9D0"><div class="mcard-top"><div class="micon-wrap" style="background:linear-gradient(145deg,#2a2a2a,#111)"><svg viewBox="0 0 24 24" fill="none"><path d="M19.6 8.4a4.8 4.8 0 0 1-4.8-4.8h-2.6v10.8a2.3 2.3 0 1 1-2.3-2.3c.2 0 .5 0 .7.1V9.5c-.2 0-.5-.1-.7-.1A5 5 0 1 0 15 14.4V4.9a7.4 7.4 0 0 0 4.8 1.7V4a4.8 4.8 0 0 1-.2.4" fill="#69C9D0"/><path d="M19.6 8.4a4.8 4.8 0 0 1-4.8-4.8h-2.6v10.8a2.3 2.3 0 1 1-2.3-2.3c.2 0 .5 0 .7.1V9.5c-.2 0-.5-.1-.7-.1A5 5 0 1 0 15 14.4V4.9a7.4 7.4 0 0 0 4.8 1.7" fill="#fff" opacity="0.6"/></svg></div><div><div class="mplatform">TikTok</div><div class="mhandle">@sokun.vlogger22</div></div></div><div class="mdesc">វីដេអូខ្លី ការបង្រៀន Tech Tips & Fun Content</div><div class="mlink">Follow Me</div></a>
+      <a class="mcard" href="https://t.me/Sokun_Nheus" target="_blank" style="--accent:#2AABEE"><div class="mcard-top"><div class="micon-wrap" style="background:linear-gradient(145deg,#29b6f6,#0277bd)"><svg viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="M22 2L15 22l-4-9-9-4 20-7z" stroke="#fff" stroke-width="2"/></svg></div><div><div class="mplatform">Telegram</div><div class="mhandle">@Sokun_Nheus</div></div></div><div class="mdesc">ព័ត៌មានថ្មីៗ ការចែករំលែក Tips & Resources</div><div class="mlink">Join Channel</div></a>
+      <a class="mcard" href="#" target="_blank" style="--accent:#c8a96e"><div class="mcard-top"><div class="micon-wrap" style="background:linear-gradient(145deg,#c8a96e,#a07840)"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="1.5"/><path d="M12 3c-2 2.5-3 5.5-3 9s1 6.5 3 9M12 3c2 2.5 3 5.5 3 9s-1 6.5-3 9M3 12h18M4.2 8h15.6M4.2 16h15.6" stroke="#fff" stroke-width="1.2"/></svg></div><div><div class="mplatform">Portfolio</div><div class="mhandle">Sokun Nheus</div></div></div><div class="mdesc">ស្នាដៃវីដេអូ និងការងារ Cameraman</div><div class="mlink">Explore</div></a>
+      <a class="mcard" href="tel:0978586856" style="--accent:#4caf50"><div class="mcard-top"><div class="micon-wrap" style="background:linear-gradient(145deg,#66bb6a,#2e7d32)"><svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="#fff" stroke-width="1.8" fill="none"/></svg></div><div><div class="mplatform">Phone</div><div class="mhandle">0978 586 856</div></div></div><div class="mdesc">ហៅដោយផ្ទាល់ — ទំនាក់ទំនងបានគ្រប់ពេល</div><div class="mlink">Call Now</div></a>
+    </div>
+  </div>
+
+  <div class="footer">✦ Kingdom of Cambodia · Nation Religion King · Curriculum Vitae · Nheus Sokun · 2025 ✦</div>
+</div>
+</body>
+</html>
